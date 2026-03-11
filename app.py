@@ -59,12 +59,13 @@ def create_chatbot():
                 - Generate an appropriate response to the current message
                 - Return that response as a string
         """
-        # TODO: Generate and return response
-        pass
+        # Generate and return response
+        return chatbot.get_response(message, history)
 
     
     
     # Create Gradio interface. Customize the interface however you'd like!
+    # should also document in the memo the user interface choices
     demo = gr.ChatInterface(
         chat,
         title="6.C395",
