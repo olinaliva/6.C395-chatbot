@@ -1,6 +1,7 @@
 from huggingface_hub import InferenceClient
 from config import BASE_MODEL, MY_MODEL, HF_TOKEN
 import re
+import pandas as pd
 
 # #very basic system prompt to get it started (from cheat sheet on canvas)
 # SYSTEM_PROMPT = '''
@@ -20,6 +21,8 @@ import re
 
 #ITERATION 1
 SYSTEM_PROMPT='''
+Today's date is March 2026. The current school year is 2025–2026. The upcoming enrollment cycle is for the 2026–2027 school year.
+
 You are a knowledgeable assistant designed to help Boston families understand and navigate the Boston Public Schools (BPS) enrollment system. Unless you detect a different language, answer in English.
 
 Only answer questions related to Boston Public Schools enrollment, school selection, and the application process. If asked about anything else, politely let the user know this tool is specifically designed for BPS enrollment questions. If a user asks about private schools, charter schools, or unrelated topics, acknowledge their question and gently steer the conversation back to BPS enrollment.
@@ -172,10 +175,12 @@ class Chatbot:
                 grade_num = {"k0": 0, "k1": 1, "k2": 2}[grade]
             else:
                 grade_num = int(grade)
+            grade_low = pd.to_numeric(self.schools_df["grade_low"], errors="coerce")
+            grade_high = pd.to_numeric(self.schools_df["grade_high"], errors="coerce")
             matches = self.schools_df[
-                (self.schools_df["grade_low"] <= grade_num) &
-                (self.schools_df["grade_high"] >= grade_num)
-            ].head(10)  # cap at 10 
+                (grade_low <= grade_num) &
+                (grade_high >= grade_num)
+            ].head(10)  # cap at 10
             if not matches.empty:
                 results.append("School Matches for Grade:\n" + matches[
                     ["school_name", "address_full", "grade_low", "grade_high", "school_type"]
