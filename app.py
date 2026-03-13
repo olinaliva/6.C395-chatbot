@@ -20,12 +20,19 @@ Example Usage:
 
 import gradio as gr
 from src.chat import Chatbot
+import pandas as pd #this is for the spreadsheets
 
 def create_chatbot():
     """
     Creates and configures the chatbot interface.
     """
-    chatbot = Chatbot()
+    # Loading spreadsheet data once at startup
+    schools_df = pd.read_csv("data/schools.csv")
+    languages_df = pd.read_csv("data/languages.csv")
+    alternative_df = pd.read_csv("data/alternative.csv")
+    chatbot = Chatbot(schools_df, languages_df, alternative_df)
+
+    # chatbot = Chatbot()
     
     def chat(message, history):
         """

@@ -1,0 +1,122 @@
+school_id,school_name,is_kindergarten,is_primary,is_high_school,address_full,street,city,state,zip,phone,email,grade_low,grade_high,school_type
+1,Adams Elementary School,1,1,0,"165 Webster St. East Boston, MA 02128",165 Webster St.,East Boston,MA,2128,(617) 635-8383,adams@bostonpublicschools.org,K0,6,Traditional
+2,Alighieri Dante Montessori School,1,1,0,"37 Gove St. East Boston, MA 02128",37 Gove St.,East Boston,MA,2128,(617) 635-8529,alighieri@bostonpublicschools.org,K0,6,Traditional
+3,Baldwin Early Learning Pilot Academy,1,1,0,"121 Corey Rd. Brighton, MA 02135",121 Corey Rd.,Brighton,MA,2135,(617) 635-8409,nzelc@bostonpublicschools.org,K0,1,Pilot
+4,Bates Elementary School,1,1,0,"426 Beech St. Roslindale, MA 02131",426 Beech St.,Roslindale,MA,2131,(617) 635-8064,bates@bostonpublicschools.org,K0,6,Traditional
+5,Beethoven Elementary School,1,1,0,"5125 Washington St. West Roxbury, MA 02132",5125 Washington St.,West Roxbury,MA,2132,(617) 635-8149,beethoven@bostonpublicschools.org,K1,2,Traditional
+6,Blackstone Elementary School,1,1,0,"380 Shawmut Ave South End, MA 02118",380,Shawmut Ave South End,MA,2118,(617) 635-8471,blackstone@bostonpublicschools.org,K0,6,Traditional
+7,Boston Teachers Union K-8 Pilot School,1,1,1,"25 Walk Hill St Jamaica Plain, MA 02130",25,Walk Hill St Jamaica Plain,MA,2130,(617) 635-7717,btuschool@bostonpublicschools.org,K1,8,Pilot
+8,Bradley Elementary School,1,1,0,"110 Beachview Rd East Boston, MA 02128",110,Beachview Rd East Boston,MA,2128,(617) 635-8422,bradley@bostonpublicschools.org,K0,6,Traditional
+9,Channing Elementary School,1,1,0,"35 Sunnyside St Hyde Park, MA 02136",35,Sunnyside St Hyde Park,MA,2136,(617) 635-8722,channing@bostonpublicschools.org,K0,6,Traditional
+10,Chittick Elementary School,1,1,0,"154 Ruskindale Rd Mattapan, MA 02136",154,Ruskindale Rd Mattapan,MA,2136,(617) 635-8652,chittick@bostonpublicschools.org,K0,6,Traditional
+11,Clap Elementary School,1,1,0,"35 Harvest St Dorchester, MA 02125",35,Harvest St Dorchester,MA,2125,(617) 635-8672,clap@bostonpublicschools.org,K0,6,Traditional
+12,Condon K-8 School,1,1,1,"200 D St South Boston, MA 02127",200,D St South Boston,MA,2127,(617) 635-8608,condon@bostonpublicschools.org,K0,8,Traditional
+13,Conley Elementary School,1,1,0,"450 Poplar St Roslindale, MA 02131",450,Poplar St Roslindale,MA,2131,(617) 635-8099,conley@bostonpublicschools.org,K0,6,Elementary
+14,Curley K-8 School,1,1,1,"40 Pershing Rd Jamaica Plain, MA 02130",40,Pershing Rd Jamaica Plain,MA,2130,(617) 635-8239,,K0,8,Traditional
+15,Dever Elementary School,1,1,0,"325 Mt Vernon St Dorchester, MA 02125",325,Mt Vernon St Dorchester,MA,2125,(617) 635-8694,dever@bostonpublicschools.org,K1,6,Traditional
+16,Dudley Street Neighborhood School,1,1,0,"6 Shirley St Roxbury, MA 02119",6,Shirley St Roxbury,MA,2119,(617) 635-8507,dudleystreetschool@bostonpublicschools.org,K1,5,In-District Charter School
+17,East Boston Early Education Center,1,1,0,"135 Gove St East Boston, MA 02128",135,Gove St East Boston,MA,2128,(617) 635-6456,,K0,1,Traditional
+18,Edison Elementary School,1,1,0,"60 Glenmont Rd Brighton, MA 02135",60,Glenmont Rd Brighton,MA,2135,(617) 635-8436,,K1,6,Traditional
+19,Eliot K-8 Innovation School - Lower,1,1,0,"16 Charter St North End, MA 02113",16,Charter St North End,MA,2113,(617) 635-8388,,K1,1,Innovation School
+20,Ellis Elementary School,1,1,0,"302 Walnut Ave Roxbury, MA 02119",302,Walnut Ave Roxbury,MA,2119,(617) 635-8257,,K0,6,Traditional
+21,Ellison-Parks Early Education School,1,1,0,"108 Babson St Mattapan, MA 02126",108,Babson St Mattapan,MA,2126,(617) 635-7680,,K0,3,Traditional
+22,Everett Elementary School,1,1,0,"71 Pleasant St Dorchester, MA 02125",71,Pleasant St Dorchester,MA,2125,(617) 635-8779,,K0,6,Traditional
+23,Gardner Pilot Academy,1,1,1,"30 Athol St Allston, MA 02134",30,Athol St Allston,MA,2134,(617) 635-8365,,K0,8,Pilot
+24,Greenwood Sarah K-8 School,1,1,1,"186 Glenway Street Dorchester, MA 02121",186,Glenway Street Dorchester,MA,2121,(617) 635-8710,,K1,8,Traditional
+25,Grew Elementary School,1,1,0,"40 Gordon Ave Hyde Park, MA 02136",40,Gordon Ave Hyde Park,MA,2136,(617) 635-8715,,K1,6,Traditional
+26,Guild Elementary School,1,1,0,"195 Leyden St East Boston, MA 02128",195,Leyden St East Boston,MA,2128,(617) 635-8523,,K0,6,Traditional
+27,Hale Elementary School,1,1,0,"51 Cedar St Roxbury, MA 02119",51,Cedar St Roxbury,MA,2119,(617) 635-8205,,K1,6,Traditional
+28,Haley Pilot School,1,1,1,"570 Amer Legion Hwy Roslindale, MA 02131",570,Amer Legion Hwy Roslindale,MA,2131,(617) 635-8169,,"K0 - 6,8",,Pilot
+29,Harvard-Kent Elementary School,1,1,0,"50 Bunker Hill St Charlestown, MA 02129",50,Bunker Hill St Charlestown,MA,2129,(617) 635-8358,,K0,6,Traditional
+30,Haynes Early Education Center,1,1,0,"263 Blue Hill Ave Roxbury, MA 02119",263,Blue Hill Ave Roxbury,MA,2119,(617) 635-6446,,K0,1,Traditional
+31,Henderson K-12 Inclusion School Lower,1,1,0,"1669 Dorchester Ave Dorchester, MA 02122",1669,Dorchester Ave Dorchester,MA,2122,(617) 635-8725,,K0,1,Innovation School
+32,Hennigan Elementary School,1,1,1,"200 Heath St Jamaica Plain, MA 02130",200,Heath St Jamaica Plain,MA,2130,(617) 635-8264,,K2,8,Traditional
+33,Hernandez Dual Language Elementary,1,1,1,"61 School St Roxbury, MA 02119",61,School St Roxbury,MA,2119,(617) 635-8187,,"K1 - 6, 8",,Traditional
+34,Higginson Inclusion K0-2 School,1,1,0,"160 Harrishof Street Roxbury, MA 02119",160,Harrishof Street Roxbury,MA,2119,(617) 635-8909,,K0,2,Traditional
+35,Holmes Elementary School,1,1,0,"40 School St Dorchester, MA 02124",40,School St Dorchester,MA,2124,(617) 635-8681,,K0,6,Innovation School
+36,Horace Mann School for the Deaf Hard of Hearing,1,1,1,28 Walker St Charlestown 02129,28 Walker St,Charlestown,MA,2129,(617) 635-8534,,K0,12+,Specialized Ed
+37,Hurley K-8 School,1,1,1,"70 Worcester St South End, MA 02118",70,Worcester St South End,MA,2118,(617) 635-8489,,K0,8,Traditional
+38,Kennedy John F Elementary School,1,1,0,"7 Bolster St Jamaica Plain, MA 02130",7,Bolster St Jamaica Plain,MA,2130,(617) 635-8127,jkennedy@bostonpublicschools.org,K1,6,Traditional
+39,Kennedy Patrick J Elementary School,1,1,0,"343 Saratoga St East Boston, MA 02128",343,Saratoga St East Boston,MA,2128,(617) 635-8466,pkennedy@bostonpublicschools.org,K0,6,Traditional
+40,Kenny Elementary School,1,1,0,"19 Oakton Ave Dorchester, MA 02122",19,Oakton Ave Dorchester,MA,2122,(617) 635-8789,kenny@bostonpublicschools.org,K0,6,Traditional
+41,Kilmer K-8 School (K-3),1,1,0,"35 Baker St West Roxbury, MA 02132",35,Baker St West Roxbury,MA,2132,(617) 635-8060,kilmer@bostonpublicschools.org,K0,3,Traditional
+42,King Elementary School,1,1,0,"77 Lawrence Ave Dorchester, MA 02121",77,Lawrence Ave Dorchester,MA,2121,(617) 635-8212,king@bostonpublicschools.org,K0,6,Traditional
+43,Lee Academy,1,1,0,"25 Dunbar Av Dorchester, MA 02124",25,Dunbar Av Dorchester,MA,2124,(617) 635-8618,,K0,3,Pilot
+44,Lee K-8 School,1,1,1,"155 Talbot Ave Dorchester, MA 02124",155,Talbot Ave Dorchester,MA,2124,(617) 635-8687,,K0,8,Traditional
+45,Lyndon K-8 School,1,1,1,"20 Mt Vernon St West Roxbury, MA 02132",20,Mt Vernon St West Roxbury,MA,2132,(617) 635-6824,lyndon@bostonpublicschools.org,K1,8,Pilot
+46,Lyon K-8 School,1,1,1,"50 Beechcroft St Brighton, MA 02135",50,Beechcroft St Brighton,MA,2135,(617) 635-7945,lyon@bostonpublicschools.org,K2,8,Traditional
+47,Manning Elementary School,1,1,0,"130 Louders Lane Jamaica Plain, MA 02130",130,Louders Lane Jamaica Plain,MA,2130,(617) 635-8102,manning@bostonpublicschools.org,K0,6,Traditional
+48,Mario Umana Academy,1,1,1,"312 Border St East Boston, MA 02128",312,Border St East Boston,MA,2128,(617) 635-8481,umana@bostonpublicschools.org,K0,8,Traditional
+49,Mason Elementary School,1,1,0,"150 Norfolk Ave Roxbury, MA 02119",150,Norfolk Ave Roxbury,MA,2119,(617) 635-8405,mason@bostonpublicschools.org,K0,5,Pilot
+50,Mather Elementary School,1,1,0,"24 Parish St Dorchester, MA 02122",24,Parish St Dorchester,MA,2122,(617) 635-8757,mather@bostonpublicschools.org,K1,6,Traditional
+51,Mattahunt Elementary School,1,1,0,"123 Alabama St Mattapan, MA 02126",123,Alabama St Mattapan,MA,2126,(617) 635-8792,mattahunt@bostonpublicschools.org,K0,6,Traditional
+52,McKay K-8 School,1,1,1,"122 Cottage St East Boston, MA 02128",122,Cottage St East Boston,MA,2128,(617) 635-8510,mckay@bostonpublicschools.org,K1,8,Traditional
+53,Mel H King - Elementary,1,1,0,"90 Warren Ave Back Bay, MA 02116",90,Warren Ave Back Bay,MA,2116,(617) 635-9978,,K0,5,Specialized Ed
+54,Mendell Elementary School,1,1,0,"164 School St Roxbury, MA 02119",164,School St Roxbury,MA,2119,(617) 635-8234,mendell@bostonpublicschools.org,K0,6,Traditional
+55,Mildred Avenue K-8 School,1,1,1,"5 Mildred Ave Mattapan, MA 02126",5,Mildred Ave Mattapan,MA,2126,(617) 635-1642,mildredave@bostonpublicschools.org,K1,8,Traditional
+56,Mozart Elementary School,1,1,0,"236 Beech St Roslindale, MA 02131",236,Beech St Roslindale,MA,2131,(617) 635-8082,mozart@bostonpublicschools.org,K0,6,Traditional
+57,Murphy K-8 School,1,1,1,"1 Worrell St Dorchester, MA 02122",1,Worrell St Dorchester,MA,2122,(617) 635-8781,murphy@bostonpublicschools.org,K0,8,Traditional
+58,O'Donnell Elementary School,1,1,0,"33 Trenton St East Boston, MA 02128",33,Trenton St East Boston,MA,2128,(617) 635-8454,esproviero@bostonpublicschools.org,K1,6,Traditional
+59,Orchard Gardens K-8 School,1,1,1,"906 Albany St Roxbury, MA 02119",906,Albany St Roxbury,MA,2119,(617) 635-1656,orchardgardens@bostonpublicschools.org,K0,8,Pilot
+60,Otis Elementary School,1,1,0,"218 Marion St East Boston, MA 02128",218,Marion St East Boston,MA,2128,(617) 635-8372,otis@bostonpublicschools.org,K0,6,Traditional
+61,Perkins Elementary School,1,1,0,"50 Rev Burke St South Boston, MA 02127",50,Rev Burke St South Boston,MA,2127,(617) 635-8601,perkins@bostonpublicschools.org,K2,6,Traditional
+62,Perry Elementary School,1,1,0,"745 E Seventh St South Boston, MA 02127",745,E Seventh St South Boston,MA,2127,(617) 635-8840,perry@bostonpublicschools.org,K1,6,Traditional
+63,Quincy Elementary School,1,1,0,"885 Washington St South End, MA 02111",885,Washington St South End,MA,2111,(617) 635-8497,,K0,5,Traditional
+64,Roosevelt K-8 School (K1-1),1,1,0,"30 Millstone Rd Hyde Park, MA 02136",30,Millstone Rd Hyde Park,MA,2136,(617) 635-8676,roosevelt@bostonpublicschools.org,K0,1,Traditional
+65,Russell Elementary School,1,1,0,"750 Columbia Rd Dorchester, MA 02125",750,Columbia Rd Dorchester,MA,2125,(617) 635-8803,russell@bostonpublicschools.org,K0,5,Traditional
+66,Sarah Roberts Elementary School,1,1,0,"105 Cummins Hwy, Roslindale, MA 02131",105 Cummins Hwy,Roslindale,MA,2131,(617) 635-8131,philbrick@boston.K12.ma.us; sumner@boston.K12.ma.us,K0,6,Traditional
+67,Shaw-Taylor Elementary School (K-1),1,1,0,"429 Norfolk St Dorchester, MA 02124",429,Norfolk St Dorchester,MA,2124,(617) 635-8777,adavis8@bostonpublicschools.org,K1,1,Traditional
+68,Tobin K-8 School,1,1,1,"40 Smith St Roxbury, MA 02120",40,Smith St Roxbury,MA,2120,(617) 635-8393,,K0,8,Traditional
+69,Trotter Elementary School,1,1,0,"135 Humboldt Ave Dorchester, MA 02121",135,Humboldt Ave Dorchester,MA,2121,(617) 635-8225,trotter@bostonpublicschools.org,K0,6,Traditional
+70,Tynan Elementary School,1,1,0,"650 E Fourth St South Boston, MA 02127",650,E Fourth St South Boston,MA,2127,(617) 635-8641,tynan@bostonpublicschools.org,K0,6,Traditional
+71,UP Academy Dorchester,1,1,1,"35 Westville St 02124 Dorchester, MA 02121",35 Westville St 02124,Dorchester,MA,2121,(617) 635-8810,info@upacademydorchester.org,K1,8,Horace Mann (In-District) Charter
+72,UP Academy Holland,1,1,0,"85 Olney St Dorchester, MA 02121",85,Olney St Dorchester,MA,2121,(617) 635-8832,holland@bostonpublicschools.org,K1,6,Traditional
+73,Warren-Prescott K-8 School,1,1,1,"50 School St Charlestown, MA 02129",50,School St Charlestown,MA,2129,(617) 635-8346,warren-prescott@bostonpublicschools.org,K0,8,Traditional
+74,Winship Elementary School,1,1,0,"54 Dighton St Brighton, MA 02135",54,Dighton St Brighton,MA,2135,(617) 635-8399,winship@bostonpublicschools.org,K0,6,Traditional
+75,Winthrop Elementary School,1,1,0,"35 Brookford St Dorchester, MA 02125",35,Brookford St Dorchester,MA,2125,(617) 635-8379,winthrop@bbostonpublicschools.org,K0,6,Traditional
+76,Young Achievers K-8 School,1,1,1,"20 Outlook Rd Mattapan, MA 02126",20,Outlook Rd Mattapan,MA,2126,(617) 635-6804,youngachievers@bostonpublicschools.org,K0,8,Pilot
+77,Carter School,0,1,1,"270 Columbia Rd Dorchester, MA 02121",270,Columbia Rd Dorchester,MA,2121,(617) 635-9832,carter@bostonpublicschools.org,5,12,Non-Traditional/Specialized
+78,Dearborn 6-12 STEM Academy,0,1,1,"36 Winthrop St Roxbury, MA 02119",36,Winthrop St Roxbury,MA,2119,(617) 635-8412,dearborn@bostonpublicschools.org,6,12,Traditional
+79,Eliot K-8 Innovation School - Intermediate,0,1,0,"173 Salem Street North End, MA 02113",173,Salem Street North End,MA,2113,(617) 635-8545,,2,4,Innovation School
+80,Eliot K-8 Innovation School - Upper,0,1,1,"585 Commercial St North End, MA 02113",585,Commercial St North End,MA,2113,(617) 635-8545,,5,8,Innovation School
+81,Henderson K-12 Inclusion School Upper,0,1,1,"18 Croftland Ave Dorchester, MA 02124",18,Croftland Ave Dorchester,MA,2124,(617) 635-6365,,2,12,Innovation School
+82,Higginson-Lewis 3-8 School,0,1,1,"131 Walnut Ave Roxbury, MA 02119",131,Walnut Ave Roxbury,MA,2119,(617) 635-8247,,3,8,Inclusion
+83,Kilmer K-8 School (4-8),0,1,1,"140 Russett Rd West Roxbury, MA 02132",140,Russett Rd West Roxbury,MA,2132,(617) 635-6855,kilmer@bostonpublicschools.org,4,8,Traditional
+84,Mel H King - Middle,0,1,1,"50 St Mary St Fenway, MA 02215",50,St Mary St Fenway,MA,2215,(617) 635-9853,,6,8,Specialized Ed
+85,Mel H King South End Academy,0,1,1,"90 Warren Ave Back Bay, MA 02116",90,Warren Ave Back Bay,MA,2116,(617) 635-9976,,6,12,Specialized Ed
+86,Ohrenberger School (3-8),0,1,1,"175 W Boundary Rd West Roxbury, MA 02132",175,W Boundary Rd West Roxbury,MA,2132,(617) 635-8157,ohrenberger@bostonpublicschools.org,3,8,Traditional
+87,Quincy Upper School,0,1,1,"900 Washington Street Boston, MA 02116",900,Washington Street Boston,MA,2116,(617) 635-8940,quincyupper@bostonpublicschools.org,6,12,Pilot
+88,Roosevelt K-8 School (2-8),0,1,1,"95 Needham Rd Hyde Park, MA 02136",95,Needham Rd Hyde Park,MA,2136,(617) 635-8676,,2,8,Traditional
+89,Shaw-Taylor Elementary School (2-6),0,1,1,"1060 Morton St Mattapan, MA 02126",1060,Morton St Mattapan,MA,2126,(617) 635-8731,taylor@bostonpublicschools.org,2,6,Traditional
+90,UP Academy Boston,0,1,1,"215 Dorchester Street South Boston, MA 02127",215,Dorchester Street South Boston,MA,2127,(617) 635-8819,info@upacademyboston.org,6,8,Horace Mann (In-District) Charter
+91,Albert Holland School of Technology,0,0,1,"60 Washington St Dorchester, MA 02121",60,Washington St Dorchester,MA,2121,(617) 635-9837,burke@bostonpublicschools.org,7,12,Traditional
+92,Another Course to College,0,0,1,"612 Metropolitan Avenue. Hyde Park, MA 02136",612 Metropolitan Avenue.,Hyde Park,MA,2136,(617) 635-8865,acc@bostonpublicschools.org,9,12,Pilot
+93,Boston Adult Tech Academy,0,0,1,"20 Church Street Boston, MA 02116",20,Church Street Boston,MA,2116,(617) 635-1542,adultacad@bostonpublicschools.org,11,12,Special
+94,Boston Arts Academy,0,0,1,"174 Ipswich Street Boston, MA 02215",174,Ipswich Street Boston,MA,2215,(617) 635-6470,artsacademy@bostonpublicschools.org,9,12,Pilot
+95,Boston Collaborative High School,0,0,1,"215 Dorchester St South Boston, MA 02127",215,Dorchester St South Boston,MA,2127,(617) 635-8035,,9,12,Alternative
+96,Boston Day-Evening Academy,0,0,1,"20 Kearsarge Ave Roxbury, MA 02119",20,Kearsarge Ave Roxbury,MA,2119,(617) 635-6789,,9,12,In-District Charter School
+97,Boston Green Academy,0,0,1,"20 Warren Street Brighton, MA 02135",20,Warren Street Brighton,MA,2135,(617) 635-9860,info@bostongreenacademy.org,7,12,Horace Mann (In-District) Charter School
+98,Boston International High School,0,0,1,"100 Maxwell St Dorchester, MA 02124",100,Maxwell St Dorchester,MA,2124,(617) 635-9373,bihs@bostonpublicschools.org,9,12,Regular
+99,Boston Latin Academy,0,0,1,"205 Townsend St Boston, MA 02121",205,Townsend St Boston,MA,2121,(617) 635-9957,academy@bostonpublicschools.org,7,12,Exam
+100,Boston Latin School,0,0,1,"78 Avenue Louis Pasteur. Boston, MA 02115",78 Avenue Louis Pasteur.,Boston,MA,2115,(617) 635-8895,latin@bostonpublicschools.org,7,12,Exam
+101,Brighton High School,0,0,1,"25 Warren St Brighton, MA 02135",25,Warren St Brighton,MA,2135,(617) 635-9873,brighton@bostonpublicschools.org,7,12,Traditional
+102,Charlestown High School,0,0,1,"240 Medford St Charlestown, MA 02129",240,Medford St Charlestown,MA,2129,(617) 635-9914,charlestown@bostonpublicschools.org,7,12,Traditional
+103,Community Academy,0,0,1,"25 Glen Rd Jamaica Plain, MA 02130",25,Glen Rd Jamaica Plain,MA,2130,(617) 635-7734,commacad@bostonpublicschools.org,9,12,Traditional
+104,Community Academy of Science and Health,0,0,1,"11 Charles St Dorchester, MA 02122",11,Charles St Dorchester,MA,2122,(617) 635-8950,CASH@bostonpublicschools.org,9,12,Traditional
+105,East Boston High School,0,0,1,"86 White St East Boston, MA 02128",86,White St East Boston,MA,2128,(617) 635-9896,,7,12,Traditional
+106,English High School,0,0,1,"144 McBride St Jamaica Plain, MA 02130",144,McBride St Jamaica Plain,MA,2130,(617) 635-8979,,7,12,Traditional
+107,Excel High School,0,0,1,"95 G St South Boston, MA 02127",95,G St South Boston,MA,2127,(617) 635-9870,,9,12,Traditional
+108,Fenway High School,0,0,1,"67 Alleghany Street Fenway, MA 02215",67,Alleghany Street Fenway,MA,2215,(617) 635-9911,,9,12,Pilot
+109,Greater Egleston High School,0,0,1,"80 School St Roxbury, MA 02119",80,School St Roxbury,MA,2119,(617) 635-6429,,9,12,Pilot
+110,Kennedy Academy for Health Careers (9-10),0,0,1,"10 Fenwood Rd Boston, MA 02115",10,Fenwood Rd Boston,MA,2115,(617) 635-8450,,9,10,In-District Charter School
+111,Kennedy Academy for Health Careers (11-12),0,0,1,"384 Warren St Roxbury, MA 02119",384,Warren St Roxbury,MA,2119,(617) 635-8650,healthcareers@bostonpublicschools.org,11,12,In-District Charter School
+112,Lyon High School,0,0,1,"95 Beechcroft St Brighton, MA 02135",95,Beechcroft St Brighton,MA,2135,(617) 635-8351,lyonupper@bostonpublicschools.org,9,12,Pilot
+113,Madison Park Technical Vocational High School,0,0,1,"75 Malcolm X Blvd Roxbury, MA 02120",75,Malcolm X Blvd Roxbury,MA,2120,(617) 635-8970,madisonparkadmissions@bostonpublicschools.org,9,12,Innovation School
+114,Margarita Muniz Academy,0,0,1,"20 Child St Jamaica Plain, MA 02130",20,Child St Jamaica Plain,MA,2130,(617) 635-8198,munizacademy@bostonpublicschools.org,9,12,Innovation School
+115,Mel H King - Prep,0,0,1,"97 Peterborough St Fenway, MA 02215",97,Peterborough St Fenway,MA,2215,(617) 635-9907,,9,12,Specialized Ed
+116,New Mission High School,0,0,1,"655 Metropolitan Avenue Hyde Park, MA 02136",655,Metropolitan Avenue Hyde Park,MA,2136,(617) 635-6437,newmission@bostonpublicschools.org,7,12,Pilot
+117,Newcomers Academy,0,0,1,"100 Maxwell St Dorchester, MA 02124",100,Maxwell St Dorchester,MA,2124,(617) 635-7993,bihs@bostonpublicschools.org,9,12,Traditional
+118,O'Bryant School of Math & Science,0,0,1,"55 Malcolm X Blvd Roxbury, MA 02120",55,Malcolm X Blvd Roxbury,MA,2120,(617) 635-9932,obryant@bostonpublicschools.org,7,12,Exam
+119,Ruth Batson Academy,0,0,1,"315 Mt Vernon St Dorchester, MA 02125",315,Mt Vernon St Dorchester,MA,2125,(617) 635-8657,,7,12,Pilot
+120,Snowden International High School,0,0,1,"150 Newbury Street Back Bay, MA 02116",150,Newbury Street Back Bay,MA,2116,(617) 635-9989,snowden@bostonpublicschools.org,9,12,Traditional
+121,TechBoston Academy,0,0,1,"9 Peacevale Rd Dorchester, MA 02124",9,Peacevale Rd Dorchester,MA,2124,(617) 635-1615,techbostonacad@bostonpublicschools.org,7,12,Pilot
