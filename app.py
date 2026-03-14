@@ -112,7 +112,44 @@ button.secondary, button[class*="secondary"] {
 footer {
     display: none !important;
 }
+
+#language-selector {
+    border: 2px solid #00234b !important;
+    border-radius: 8px !important;
+    font-size: 0.9rem !important;
+    background: #ffffff !important;
+    color: #00234b !important;
+    max-width: 260px !important;
+}
+#language-selector label {
+    color: #00234b !important;
+    font-weight: 600 !important;
+    font-size: 0.85rem !important;
+}
+
+#clear-chat-btn {
+    background-color: #ffffff !important;
+    color: #c0392b !important;
+    border: 2px solid #c0392b !important;
+    border-radius: 8px !important;
+    font-weight: 700 !important;
+    font-size: 0.95rem !important;
+    padding: 8px 20px !important;
+    max-width: 160px !important;
+}
+#clear-chat-btn:hover {
+    background-color: #fff0ee !important;
+}
 """
+
+LANGUAGE_INSTRUCTIONS = {
+    "Auto-detect": "",
+    "Spanish": "The user prefers Spanish. Please respond in Spanish.",
+    "Vietnamese": "The user prefers Vietnamese. Please respond in Vietnamese.",
+    "Chinese": "The user prefers Chinese (Simplified). Please respond in Chinese.",
+    "Haitian Kreyòl": "The user prefers Haitian Kreyòl. Please respond in Haitian Kreyòl.",
+    "ASL (notes only)": "The user communicates via ASL. Please respond with clear, simple written English suitable for an ASL user.",
+}
 
 def create_chatbot():
     schools_df = pd.read_csv("data/schools.csv")
@@ -120,8 +157,11 @@ def create_chatbot():
     alternative_df = pd.read_csv("data/alternative.csv")
     chatbot = Chatbot(schools_df, languages_df, alternative_df)
 
+    current_language = {"value": "Auto-detect"}
+
     def chat(message, history):
-        return chatbot.get_response(message, history)
+        instruction = LANGUAGE_INSTRUCTIONS.get(current_language["value"], "")
+        yield from chatbot.get_response(message, history, instruction)
 
     with gr.Blocks(css=CUSTOM_CSS) as demo:
         gr.HTML('<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700;800&display=swap" rel="stylesheet">')
@@ -140,47 +180,63 @@ def create_chatbot():
             "just wait a few seconds and try again."
         )
 
-        gr.HTML("""
-            <button
-                onclick="
-                    var p = document.getElementById('info-panel');
-                    var arrow = document.getElementById('info-arrow');
-                    if (p.style.display === 'none') {
-                        p.style.display = 'block';
-                        arrow.textContent = '▴';
-                    } else {
-                        p.style.display = 'none';
-                        arrow.textContent = '▾';
-                    }
-                "
-                style="
-                    background: white;
-                    color: #00234b;
-                    border: 2px solid #00234b;
-                    border-radius: 8px;
-                    padding: 4px 12px;
-                    font-size: 0.85rem;
-                    font-weight: 600;
-                    cursor: pointer;
-                    margin-bottom: 8px;
-                "
-            >What I can help with <span id="info-arrow">▾</span></button>
-            <div id="info-panel" style="display:none; color:#1f4e79; background:#eef6ff; padding:12px; border-radius:8px; margin-bottom:8px;">
-                <ul>
-                    <li>Finding schools by grade level, location, or type</li>
-                    <li>Dual language programs (Spanish, Vietnamese, Chinese, Haitian Kreyòl, ASL)</li>
-                    <li>Alternative &amp; re-engagement programs for flexible learners</li>
-                    <li>General BPS enrollment questions</li>
-                </ul>
-                <p><strong>Data includes</strong> ~120 BPS schools, current as of the 2024–25 school year.</p>
-                <blockquote style="color:#444;">
-                    For official enrollment decisions, always confirm details directly with
-                    <a href="https://www.bostonpublicschools.org/" target="_blank">Boston Public Schools</a>.
-                </blockquote>
-            </div>
-        """)
+        with gr.Row():
+            with gr.Column(scale=3):
+                gr.HTML("""
+                    <button
+                        onclick="
+                            var p = document.getElementById('info-panel');
+                            var arrow = document.getElementById('info-arrow');
+                            if (p.style.display === 'none') {
+                                p.style.display = 'block';
+                                arrow.textContent = '▴';
+                            } else {
+                                p.style.display = 'none';
+                                arrow.textContent = '▾';
+                            }
+                        "
+                        style="
+                            background: white;
+                            color: #00234b;
+                            border: 2px solid #00234b;
+                            border-radius: 8px;
+                            padding: 4px 12px;
+                            font-size: 0.85rem;
+                            font-weight: 600;
+                            cursor: pointer;
+                            margin-bottom: 8px;
+                        "
+                    >What I can help with <span id="info-arrow">▾</span></button>
+                    <div id="info-panel" style="display:none; color:#1f4e79; background:#eef6ff; padding:12px; border-radius:8px; margin-bottom:8px;">
+                        <ul>
+                            <li>Finding schools by grade level, location, or type</li>
+                            <li>Dual language programs (Spanish, Vietnamese, Chinese, Haitian Kreyòl, ASL)</li>
+                            <li>Alternative &amp; re-engagement programs for flexible learners</li>
+                            <li>General BPS enrollment questions</li>
+                        </ul>
+                        <p><strong>Data includes</strong> ~120 BPS schools, current as of the 2024–25 school year.</p>
+                        <blockquote style="color:#444;">
+                            For official enrollment decisions, always confirm details directly with
+                            <a href="https://www.bostonpublicschools.org/" target="_blank">Boston Public Schools</a>.
+                        </blockquote>
+                    </div>
+                """)
+            with gr.Column(scale=1, min_width=180):
+                language_dropdown = gr.Dropdown(
+                    choices=list(LANGUAGE_INSTRUCTIONS.keys()),
+                    value="Auto-detect",
+                    label="Response language",
+                    interactive=True,
+                    elem_id="language-selector",
+                )
 
-        gr.ChatInterface(
+        language_dropdown.change(
+            fn=lambda x: current_language.update({"value": x}),
+            inputs=language_dropdown,
+            outputs=None,
+        )
+
+        chat_interface = gr.ChatInterface(
             chat,
             examples=[
                 "What schools offer Spanish dual language programs?",
@@ -188,6 +244,15 @@ def create_chatbot():
                 "Are there alternative programs for students who need flexible schedules?",
                 "How do I enroll my kindergartener in BPS?",
             ],
+        )
+
+        with gr.Row():
+            clear_btn = gr.Button("Clear chat", elem_id="clear-chat-btn", variant="secondary")
+
+        clear_btn.click(
+            fn=lambda: ([], []),
+            inputs=None,
+            outputs=[chat_interface.chatbot, chat_interface.chatbot_state],
         )
 
         gr.HTML("<div style='margin-top: 16px;'></div>")

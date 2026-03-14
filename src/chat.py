@@ -66,10 +66,10 @@ class Chatbot:
         self.languages_df = languages_df
         self.alternative_df = alternative_df    
         
-    def format_prompt(self, user_input, history = None):
+    def format_prompt(self, user_input, history=None, language_instruction=""):
         """
-        TODO: Implement this method to format the user's input into a proper prompt. 
-        
+        TODO: Implement this method to format the user's input into a proper prompt.
+
         This method should:
         1. Add any necessary system context or instructions
         2. Format the user's input appropriately
@@ -80,7 +80,7 @@ class Chatbot:
 
         Returns:
             str: A formatted prompt ready for the model
-        
+
         (each model might expect different format, could check in huggingface documentation)
         Example prompt format:
             "You are a helpful assistant that specializes in...
@@ -90,6 +90,8 @@ class Chatbot:
         # adds info about the schools filtered from spreadsheets
         relevant_data = self.get_relevant_data(user_input)
         system_content = SYSTEM_PROMPT
+        if language_instruction:
+            system_content = language_instruction + "\n\n" + system_content
         if relevant_data:
             system_content += f"\n\nRELEVANT DATA FOR THIS QUERY:\n{relevant_data}"
 
@@ -115,10 +117,10 @@ class Chatbot:
         return messages
 
         
-    def get_response(self, user_input, history = None):
+    def get_response(self, user_input, history=None, language_instruction=""):
         """
         TODO: Implement this method to generate responses to user questions.
-        
+
         This method should:
         1. Use format_prompt() to prepare the input
         2. Generate a response using the model
@@ -128,16 +130,18 @@ class Chatbot:
             user_input (str): The user's question
 
         Returns:
-            str: The chatbot's response
-
-        Implementation tips:
-        - Use self.format_prompt() to format the user's input
-        - Use self.client to generate responses
+            generator: Yields partial response strings as they stream in
         """
-        messages = self.format_prompt(user_input,history)
-        #can add other parameters, check chat_completion function
-        response = self.client.chat_completion(messages=messages)
-        return response.choices[0].message.content
+        messages = self.format_prompt(user_input, history, language_instruction)
+        partial = ""
+        try:
+            for chunk in self.client.chat_completion(messages=messages, stream=True):
+                token = chunk.choices[0].delta.content
+                if token is not None:
+                    partial += token
+                    yield partial
+        except Exception as e:
+            yield (partial or "") + f"\n\n_(Error: {e}. Please try again in a few seconds.)_"
     
     #TODO debug and finesse this function
     def get_relevant_data(self, user_input):
