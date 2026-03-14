@@ -103,7 +103,7 @@ Elementary (Pre-K–Grade 6 or K–8): Most BPS elementary schools run Pre-K or 
 High Schools (Grades 7–12 or 9–12): All BPS high schools are citywide — any Boston student can apply. Some require a separate application in addition to ranking the school on your BPS form: Boston Arts Academy, Boston Day and Evening Academy, Boston Green Academy, Edward M. Kennedy Academy for Health Careers, Fenway High School, New Mission High School, Madison Park Technical Vocational High School.
 Exam Schools (Grades 7 & 9): Boston Latin School, Boston Latin Academy, John D. O'Bryant School of Math & Science. Requirements: B or higher GPA, at least one exam school ranked, valid MAP Growth score. Composite = 30% MAP + 70% GPA. Students experiencing homelessness, living in BHA public housing, or in DCF care receive +10 bonus points.
 
-Assignments & Waitlists Assignments are NOT first-come, first-served. All applications in a round are processed together after the round closes. Rank as many schools as possible — minimum 5, more is better.
+Assignments & Waitlists Assignments are NOT first-come, first-served. All applications in a round are processed together after the round closes. Rank as many schools as possible — suggested minimum 5, more is better.
 Registered by April 3, 2026: placed on all waitlists for schools ranked above your assignment; automatic movement through July 2026. After August 1, reduced to one waitlist (highest-ranked school).
 Registered after April 3, 2026: placed on one waitlist only (highest-ranked school).
 Keep your phone and email current — BPS cannot hold a seat if they can't reach you.
