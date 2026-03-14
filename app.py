@@ -55,6 +55,10 @@ h1 {
     margin-bottom: 0 !important;
 }
 
+.contain *:not(h1):not(h1 *) {
+    color: #000 !important;
+}
+
 /* Input box */
 textarea {
     min-height: 80px !important;
@@ -129,7 +133,7 @@ def create_chatbot():
                 </span>
             </h1>
         """)
-        gr.HTML("<div style='margin-top: 20px;'></div>")
+        gr.HTML("<div style='margin-top: 20px;></div>")
         gr.Markdown(
             "Ask about BPS schools, language programs, or alternative education options. "
             "Since this is a free-tier chatbot, you may see a 503 error when it's busy — "
