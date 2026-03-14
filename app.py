@@ -55,7 +55,7 @@ h1 {
     margin-bottom: 0 !important;
 }
 
-.contain *:not(h1):not(h1 *) {
+[data-testid="markdown"] * {
     color: #000 !important;
 }
 
