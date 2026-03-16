@@ -173,7 +173,7 @@ def create_chatbot():
                 </span>
             </h1>
         """)
-        gr.HTML("<div style='margin-top: 20px;></div>")
+        gr.HTML("<div style='margin-top: 20px;'></div>")
         gr.Markdown(
             "Ask about BPS schools, language programs, or alternative education options. "
             "Since this is a free-tier chatbot, you may see a 503 error when it's busy — "
